@@ -23,7 +23,7 @@ namespace Shadowsocks
 #endif
 
         /// <summary>
-        /// 应用程序的主入口点。
+        /// 应用程序的主入口点。asdfsfasdfasdfasdf
         /// </summary>
         [STAThread]
         static void Main(string[] args)
