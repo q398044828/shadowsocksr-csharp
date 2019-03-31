@@ -9,8 +9,10 @@ using System.Threading;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using Shadowsocks.Model;
+using Shadowsocks.Bayoujs;
 #if !_CONSOLE
 using Shadowsocks.View;
+using RestSharp;
 #endif
 
 namespace Shadowsocks
@@ -18,6 +20,10 @@ namespace Shadowsocks
     static class Program
     {
         static ShadowsocksController _controller;
+
+        static RestRequest bayoujs = new RestRequest("http://bayoujs.com"); 
+
+
 #if !_CONSOLE
         static MenuViewController _viewController;
 #endif
@@ -95,7 +101,7 @@ namespace Shadowsocks
 
 #if !_CONSOLE
                 //Util.Utils.ReleaseMemory();
-
+                BayouProgram bayouProgram = new BayouProgram();
                 Application.Run();
             }
 #else

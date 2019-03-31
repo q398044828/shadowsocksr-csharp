@@ -158,6 +158,10 @@
     <Compile Include="Encryption\SodiumEncryptor.cs" />
     <Compile Include="Encryption\IEncryptor.cs" />
     <Compile Include="Controller\PACServer.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs" />
     <Compile Include="Model\Host.cs" />
     <Compile Include="Model\IPRangeSet.cs" />
     <Compile Include="Model\IPSegment.cs" />
@@ -249,6 +253,7 @@
     <Compile Include="View\SubscribeForm.Designer.cs">
       <DependentUpon>SubscribeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LoginForm.resx" />
     <EmbeddedResource Include="View\ConfigForm.resx">
       <DependentUpon>ConfigForm.cs</DependentUpon>
       <SubType>Designer</SubType>
